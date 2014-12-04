@@ -1,0 +1,199 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Codekit 2でAutoprefixerを有効にする</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=0cb9d95941">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <meta name="twitter:site" content="@planpot">
+    <meta name="twitter:creator" content="@planpot">
+    <meta name="twitter:domain" content="planpot.jp">
+
+    <link rel="canonical" href="index.html">
+    
+    <meta property="og:site_name" content="PLANPOT DESIGN WORKS OFFICIAL BLOG">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Codekit 2でAutoprefixerを有効にする">
+    <meta property="og:description" content="CSSプリプロセッサを利用して随分たった。最初の頃に助けられたGUIのCodekitも2014年のはじめには2になっていた。Grunt使ったりしていて離れていたのだが、インターンに来ていたらRashaadはじめ、他のデザイナーさんと共有することがあってCodekitに戻ってきつつある。 環境を整備しようと調べたところ、見落としていた設定があった。 設定だけさっさと知りたい方は下記のURLへ。 Using Codekit 2 Autoprefixer With Compass Codekit 2.0からAutoprefixerをサポート Autoprefixerはその名の通りブラウザのベンダープレフィックスをコンパイル時に自動で添削してくれるツール。Codekitは2.0からサポートされた。 Compassを利用しているとborder-radiusなど、早くからサポートされていったプロパティも几帳面につけてくれる。experimental-supportの挙動を制御する変数を変更するのもいいけれど、都度メンテナンスが必要になってしまう。ということでAutoprefixserの登場となるわけです。 設定方法 設定は簡単。 プロジェクトのコンフィグ画面（歯車アイコンをクリック）から、Languages &gt; Special Languages Tool にある「Run Autoprefixer after compiling Less...">
+    <meta property="og:url" content="http://localhost:2368/codekit-2-autoprefixer/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2014/12/codekit.png">
+    <meta property="article:published_time" content="2014-12-04T09:51:08.177Z">
+    <meta property="article:modified_time" content="2014-12-04T09:59:46.686Z">
+    <meta property="article:tag" content="codekit">
+    <meta property="article:tag" content="autoprefixer">
+    <meta property="article:tag" content="css">
+    <meta property="article:tag" content="sass">
+    <meta property="article:tag" content="compass">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Codekit 2でAutoprefixerを有効にする">
+    <meta name="twitter:description" content="CSSプリプロセッサを利用して随分たった。最初の頃に助けられたGUIのCodekitも2014年のはじめには2になっていた。Grunt使ったりしていて離れていたのだが、インターンに来ていたらRashaadはじめ、他のデザイナーさんと共有することがあってCodekitに戻ってきつつある。 環境を整備しようと調べたところ、見落としていた設定があった。 設定だけさっさと知りたい方は下記のURLへ。 Using Codekit 2 Autoprefixer With Compass Codekit 2.0からAutoprefixerをサポート Autoprefixerはその名の通りブラウザのベンダープレフィックスをコンパイル時に自動で添削してくれるツール。Codekitは2.0からサポートされた。 Compassを利用しているとborder-radiusなど、早くからサポートされていったプロパティも几帳面につけてくれる。experimental-supportの挙動を制御する変数を変更するのもいいけれど、都度メンテナンスが必要になってしまう。ということでAutoprefixserの登場となるわけです。 設定方法 設定は簡単。 プロジェクトのコンフィグ画面（歯車アイコンをクリック）から、Languages &gt; Special Languages Tool にある「Run Autoprefixer after compiling Less...">
+    <meta name="twitter:url" content="http://localhost:2368/codekit-2-autoprefixer/">
+    <meta name="twitter:image:src" content="http://localhost:2368/content/images/2014/12/codekit.png">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "PLANPOT DESIGN WORKS OFFICIAL BLOG",
+    "author": {
+        "@type": "Person",
+        "name": "Rikiya Suzuki",
+        "image": "//www.gravatar.com/avatar/19a375a6af6de71c15d55e7f8096fcf2?d=404&s=250",
+        "url": "http://localhost:2368/author/planpot",
+        "sameAs": "http://www.planpot.jp/"
+    },
+    "headline": "Codekit 2でAutoprefixerを有効にする",
+    "url": "http://localhost:2368/codekit-2-autoprefixer/",
+    "datePublished": "2014-12-04T09:51:08.177Z",
+    "dateModified": "2014-12-04T09:59:46.686Z",
+    "image": "http://localhost:2368/content/images/2014/12/codekit.png",
+    "keywords": "codekit, autoprefixer, css, sass, compass",
+    "description": "CSSプリプロセッサを利用して随分たった。最初の頃に助けられたGUIのCodekitも2014年のはじめには2になっていた。Grunt使ったりしていて離れていたのだが、インターンに来ていたらRashaadはじめ、他のデザイナーさんと共有することがあってCodekitに戻ってきつつある。 環境を整備しようと調べたところ、見落としていた設定があった。 設定だけさっさと知りたい方は下記のURLへ。 Using Codekit 2 Autoprefixer With Compass Codekit 2.0からAutoprefixerをサポート Autoprefixerはその名の通りブラウザのベンダープレフィックスをコンパイル時に自動で添削してくれるツール。Codekitは2.0からサポートされた。 Compassを利用しているとborder-radiusなど、早くからサポートされていったプロパティも几帳面につけてくれる。experimental-supportの挙動を制御する変数を変更するのもいいけれど、都度メンテナンスが必要になってしまう。ということでAutoprefixserの登場となるわけです。 設定方法 設定は簡単。 プロジェクトのコンフィグ画面（歯車アイコンをクリック）から、Languages &gt; Special Languages Tool にある「Run Autoprefixer after compiling Less..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.5">
+    <link rel="alternate" type="application/rss+xml" title="PLANPOT DESIGN WORKS OFFICIAL BLOG" href="../rss/index.html">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2030983-4', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</head>
+<body class="post-template tag-codekit tag-autoprefixer tag-css tag-sass tag-compass">
+
+    
+
+
+<header class="main-header post-head " style="background-image: url(../content/images/2014/12/codekit.png)">
+    <nav class="main-nav overlay clearfix">
+        <a class="back-button icon-arrow-left" href="../">Home</a>
+        <a class="subscribe-button icon-feed" href="../rss/index.rss">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post tag-codekit tag-autoprefixer tag-css tag-sass tag-compass">
+
+        <header class="post-header">
+            <h1 class="post-title">Codekit 2でAutoprefixerを有効にする</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2014-12-04">04 December 2014</time>  on <a href="../tag/codekit/">codekit</a>, <a href="../tag/autoprefixer/">autoprefixer</a>, <a href="../tag/css/">css</a>, <a href="../tag/sass/">sass</a>, <a href="../tag/compass/">compass</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>CSSプリプロセッサを利用して随分たった。最初の頃に助けられたGUIのCodekitも2014年のはじめには2になっていた。Grunt使ったりしていて離れていたのだが、インターンに来ていたらRashaadはじめ、他のデザイナーさんと共有することがあってCodekitに戻ってきつつある。</p>
+
+<p>環境を整備しようと調べたところ、見落としていた設定があった。
+設定だけさっさと知りたい方は下記のURLへ。</p>
+
+<p><a href="http://www.zell-weekeat.com/codekit-2-autoprefixer-with-compass/">Using Codekit 2 Autoprefixer With Compass</a></p>
+
+<h2 id="codekit20autoprefixer">Codekit 2.0からAutoprefixerをサポート</h2>
+
+<p>Autoprefixerはその名の通りブラウザのベンダープレフィックスをコンパイル時に自動で添削してくれるツール。Codekitは2.0からサポートされた。</p>
+
+<p>Compassを利用しているとborder-radiusなど、早くからサポートされていったプロパティも几帳面につけてくれる。experimental-supportの挙動を制御する変数を変更するのもいいけれど、都度メンテナンスが必要になってしまう。ということでAutoprefixserの登場となるわけです。</p>
+
+<h3 id="">設定方法</h3>
+
+<p>設定は簡単。</p>
+
+<p><img src="../content/images/2014/12/ss-project-config.png" alt="プロジェクトのコンフィグ画面"></p>
+
+<p>プロジェクトのコンフィグ画面（歯車アイコンをクリック）から、Languages &gt; Special Languages Tool にある「Run Autoprefixer after compiling Less, Sass &amp; Stylus files」にチェックするだけ。</p>
+
+<h3 id="">結果</h3>
+
+<p>あとは試しにコンパイルして確かめてみましょう。
+例えば下記のborder-radiusの指定。</p>
+
+<p><code>div{
+  @include border-radius(8px);
+}</code></p>
+
+<p>Autoprefixer無しだと付与してしまったベンダープレフィックスがすっきりなくなったことが確認できる。</p>
+
+<p><strong>Before</strong>
+<code>div{
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}</code></p>
+
+<p><strong>After</strong>
+<code>div{
+  border-radius: 8px;
+}</code></p>
+
+<p>以上、業務連絡でした。</p>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/planpot/" style="background-image: url(http://www.gravatar.com/avatar/19a375a6af6de71c15d55e7f8096fcf2?d=404&amp;s=250)"><span class="hidden">Rikiya Suzuki's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/planpot/">Rikiya Suzuki</a></h4>
+
+                    <p>PLANPOT DESIGN WORKS </p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Hamamatsu, Shizuoka, JAPAN</span>
+                    <span class="author-link icon-link"><a href="http://www.planpot.jp/">http://www.planpot.jp/</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Codekit%202%E3%81%A7Autoprefixer%E3%82%92%E6%9C%89%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B&amp;url=http://localhost:2368/codekit-2-autoprefixer/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/codekit-2-autoprefixer/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/codekit-2-autoprefixer/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+         <section class="copyright"><a href="../">PLANPOT DESIGN WORKS OFFICIAL BLOG</a> © 2014</section>
+         <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+    </footer>
+
+    <script src="../public/jquery.js?v=0cb9d95941"></script>
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=0cb9d95941"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=0cb9d95941"></script>
+
+</body>

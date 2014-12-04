@@ -1,4 +1,48 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>PLANPOT DESIGN WORKS OFFICIAL BLOG</title><description>見えないものと闘う</description><link>http://localhost:2368/</link><generator>Ghost 0.5</generator><lastBuildDate>Thu, 04 Dec 2014 05:31:56 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>事務所改装計画中。模型できました。</title><description>&lt;p&gt;事務所を改装する計画が持ち上がったのはDESIGNEAST 05 CAMP in Hamamatsuが終わったころだろうか。実行委員として一緒に動いていた+ticが手を挙げてくれたのだ。&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>PLANPOT DESIGN WORKS OFFICIAL BLOG</title><description>見えないものと闘う</description><link>http://localhost:2368/</link><generator>Ghost 0.5</generator><lastBuildDate>Thu, 04 Dec 2014 10:03:05 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Codekit 2でAutoprefixerを有効にする</title><description>&lt;p&gt;CSSプリプロセッサを利用して随分たった。最初の頃に助けられたGUIのCodekitも2014年のはじめには2になっていた。Grunt使ったりしていて離れていたのだが、インターンに来ていたらRashaadはじめ、他のデザイナーさんと共有することがあってCodekitに戻ってきつつある。&lt;/p&gt;
+
+&lt;p&gt;環境を整備しようと調べたところ、見落としていた設定があった。
+設定だけさっさと知りたい方は下記のURLへ。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.zell-weekeat.com/codekit-2-autoprefixer-with-compass/"&gt;Using Codekit 2 Autoprefixer With Compass&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id="codekit20autoprefixer"&gt;Codekit 2.0からAutoprefixerをサポート&lt;/h2&gt;
+
+&lt;p&gt;Autoprefixerはその名の通りブラウザのベンダープレフィックスをコンパイル時に自動で添削してくれるツール。Codekitは2.0からサポートされた。&lt;/p&gt;
+
+&lt;p&gt;Compassを利用しているとborder-radiusなど、早くからサポートされていったプロパティも几帳面につけてくれる。experimental-supportの挙動を制御する変数を変更するのもいいけれど、都度メンテナンスが必要になってしまう。ということでAutoprefixserの登場となるわけです。&lt;/p&gt;
+
+&lt;h3 id=""&gt;設定方法&lt;/h3&gt;
+
+&lt;p&gt;設定は簡単。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://localhost:2368/content/images/2014/12/ss-project-config.png" alt="プロジェクトのコンフィグ画面"&gt;&lt;/p&gt;
+
+&lt;p&gt;プロジェクトのコンフィグ画面（歯車アイコンをクリック）から、Languages &gt; Special Languages Tool にある「Run Autoprefixer after compiling Less, Sass &amp;amp; Stylus files」にチェックするだけ。&lt;/p&gt;
+
+&lt;h3 id=""&gt;結果&lt;/h3&gt;
+
+&lt;p&gt;あとは試しにコンパイルして確かめてみましょう。
+例えば下記のborder-radiusの指定。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;div{
+  @include border-radius(8px);
+}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Autoprefixer無しだと付与してしまったベンダープレフィックスがすっきりなくなったことが確認できる。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Before&lt;/strong&gt;
+&lt;code&gt;div{
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;After&lt;/strong&gt;
+&lt;code&gt;div{
+  border-radius: 8px;
+}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;以上、業務連絡でした。&lt;/p&gt;</description><link>http://localhost:2368/codekit-2-autoprefixer/</link><guid isPermaLink="false">947aa2bc-d9c4-4797-b73c-dd7a99c3fb73</guid><category>codekit</category><category>autoprefixer</category><category>css</category><category>sass</category><category>compass</category><dc:creator>Rikiya Suzuki</dc:creator><pubDate>Thu, 04 Dec 2014 09:51:08 GMT</pubDate></item><item><title>事務所改装計画中。模型できました。</title><description>&lt;p&gt;事務所を改装する計画が持ち上がったのはDESIGNEAST 05 CAMP in Hamamatsuが終わったころだろうか。実行委員として一緒に動いていた+ticが手を挙げてくれたのだ。&lt;/p&gt;
 
 &lt;p&gt;ゆっくりと話をすすめてきたとはいえ、いよいよ模型も仕上がりほぼ確定した。DESIGNEASTやドライブインシアターの企画でフル稼働していた事務所も落ち着いてきたので、12月から本格的に施工する予定。iPhone6 Plusで撮影したら+ticの2人が面白がってくれたので。このブログにもいくつか掲載しておく。&lt;/p&gt;
 
