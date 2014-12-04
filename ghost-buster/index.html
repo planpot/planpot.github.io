@@ -3,65 +3,39 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Ghost busted.</title>
-    <meta name="description" content="">
-
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="../favicon.ico">
 
+        <!-- Classic Meta Tags -->
+    <title>Ghost busted.</title>
+    <meta name="description" content="やっとGhost×busterでブログ環境が構築できた。ハロウィンくらいにできたらキャッチーだったのに。お化け屋敷に挑む臆病なルイージに負けてられるかと果敢に挑戦した時間を忘れないよう、この記事に書き残す。あとで詳しく書きたい。 OSXそのものの問題：xcode-select brew docter先生頼み OSXプリインストールのpythonとnodeとの闘い 過去にsudoでpipインストールしてしまったパッケージたち GitHub">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ghost busted.">
+    <meta property="og:description" content="やっとGhost×busterでブログ環境が構築できた。ハロウィンくらいにできたらキャッチーだったのに。お化け屋敷に挑む臆病なルイージに負けてられるかと果敢に挑戦した時間を忘れないよう、この記事に書き残す。あとで詳しく書きたい。 OSXそのものの問題：xcode-select brew docter先生頼み OSXプリインストールのpythonとnodeとの闘い 過去にsudoでpipインストールしてしまったパッケージたち GitHub">
+    <meta property="og:site_name" content="Ghost busted. | ">
+    <meta property="og:url" content="http://blog.planpot.jp/ghost-buster/">
+    <meta property="og:image" content="http://blog.planpot.jp">
+    <meta property="fb:admins" content="995818770444768">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ghost busted.">
+    <meta name="twitter:description" content="やっとGhost×busterでブログ環境が構築できた。ハロウィンくらいにできたらキャッチーだったのに。お化け屋敷に挑む臆病なルイージに負けてられるかと果敢に挑戦した時間を忘れないよう、この記事に書き残す。あとで詳しく書きたい。 OSXそのものの問題：xcode-select brew docter先生頼み OSXプリインストールのpythonとnodeとの闘い 過去にsudoでpipインストールしてしまったパッケージたち GitHub">
+    <meta name="twitter:image" content="http://blog.planpot.jp">
+    <meta name="twitter:site" content="@planpot">
+    <meta name="twitter:creator" content="@planpot">
+
+    <link rel="canonical" href="http://blog.planpot.jp/ghost-buster/">
+
+
+
     <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=0cb9d95941">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
-    <meta name="twitter:site" content="@planpot">
-    <meta name="twitter:creator" content="@planpot">
-    <meta name="twitter:domain" content="planpot.jp">
-
-    <link rel="canonical" href="index.html">
-    
-    <meta property="og:site_name" content="PLANPOT DESIGN WORKS OFFICIAL BLOG">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Ghost busted.">
-    <meta property="og:description" content="やっとGhost×busterでブログ環境が構築できた。ハロウィンくらいにできたらキャッチーだったのに。お化け屋敷に挑む臆病なルイージに負けてられるかと果敢に挑戦した時間を忘れないよう、この記事に書き残す。あとで詳しく書きたい。 OSXそのものの問題：xcode-select brew docter先生頼み OSXプリインストールのpythonとnodeとの闘い 過去にsudoでpipインストールしてしまったパッケージたち GitHub Pagesについて 主なトピックスは上のとおり。buster自体の設定はとても簡単。インストールも足りないパッケージはpip install busterの時点でカバーしてくれた。 ちなみにbusterはGhostの静的ジェネレータ。ローカルで動かしているGhostを静的に書き出してGitHub Pagesにプッシュまでしてくれる賢いやつ。 作った人のGitHub ありがとう、axitkhurana! https://github.com/axitkhurana/buster Create a Static Ghost Blog with Buster  http://www.sitepoint...">
-    <meta property="og:url" content="http://localhost:2368/ghost-buster/">
-    <meta property="article:published_time" content="2014-11-21T01:32:56.689Z">
-    <meta property="article:modified_time" content="2014-11-21T03:23:19.566Z">
-    <meta property="article:tag" content="ghost">
-    <meta property="article:tag" content="buster">
-    <meta property="article:tag" content="blog">
-    <meta property="article:tag" content="osx">
-    <meta property="article:tag" content="python">
-    <meta property="article:tag" content="node">
-    <meta property="article:tag" content="github">
-    <meta property="article:tag" content="brew">
-    <meta property="article:tag" content="pip">
-    
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Ghost busted.">
-    <meta name="twitter:description" content="やっとGhost×busterでブログ環境が構築できた。ハロウィンくらいにできたらキャッチーだったのに。お化け屋敷に挑む臆病なルイージに負けてられるかと果敢に挑戦した時間を忘れないよう、この記事に書き残す。あとで詳しく書きたい。 OSXそのものの問題：xcode-select brew docter先生頼み OSXプリインストールのpythonとnodeとの闘い 過去にsudoでpipインストールしてしまったパッケージたち GitHub Pagesについて 主なトピックスは上のとおり。buster自体の設定はとても簡単。インストールも足りないパッケージはpip install busterの時点でカバーしてくれた。 ちなみにbusterはGhostの静的ジェネレータ。ローカルで動かしているGhostを静的に書き出してGitHub Pagesにプッシュまでしてくれる賢いやつ。 作った人のGitHub ありがとう、axitkhurana! https://github.com/axitkhurana/buster Create a Static Ghost Blog with Buster  http://www.sitepoint...">
-    <meta name="twitter:url" content="http://localhost:2368/ghost-buster/">
-    
-    <script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "Article",
-    "publisher": "PLANPOT DESIGN WORKS OFFICIAL BLOG",
-    "author": {
-        "@type": "Person",
-        "name": "Rikiya Suzuki",
-        "image": "//www.gravatar.com/avatar/19a375a6af6de71c15d55e7f8096fcf2?d=404&s=250",
-        "url": "http://localhost:2368/author/planpot",
-        "sameAs": "http://www.planpot.jp/"
-    },
-    "headline": "Ghost busted.",
-    "url": "http://localhost:2368/ghost-buster/",
-    "datePublished": "2014-11-21T01:32:56.689Z",
-    "dateModified": "2014-11-21T03:23:19.566Z",
-    "keywords": "ghost, buster, blog, osx, python, node, github, brew, pip",
-    "description": "やっとGhost×busterでブログ環境が構築できた。ハロウィンくらいにできたらキャッチーだったのに。お化け屋敷に挑む臆病なルイージに負けてられるかと果敢に挑戦した時間を忘れないよう、この記事に書き残す。あとで詳しく書きたい。 OSXそのものの問題：xcode-select brew docter先生頼み OSXプリインストールのpythonとnodeとの闘い 過去にsudoでpipインストールしてしまったパッケージたち GitHub Pagesについて 主なトピックスは上のとおり。buster自体の設定はとても簡単。インストールも足りないパッケージはpip install busterの時点でカバーしてくれた。 ちなみにbusterはGhostの静的ジェネレータ。ローカルで動かしているGhostを静的に書き出してGitHub Pagesにプッシュまでしてくれる賢いやつ。 作った人のGitHub ありがとう、axitkhurana! https://github.com/axitkhurana/buster Create a Static Ghost Blog with Buster  http://www.sitepoint..."
-}
-    </script>
 
     <meta name="generator" content="Ghost 0.5">
     <link rel="alternate" type="application/rss+xml" title="PLANPOT DESIGN WORKS OFFICIAL BLOG" href="../rss/index.html">
@@ -80,6 +54,7 @@
 <body class="post-template tag-ghost-tag tag-buster tag-blog tag-osx tag-python tag-node tag-github tag-brew tag-pip">
 
     
+
 
 
 <header class="main-header post-head no-cover">
