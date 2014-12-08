@@ -102,23 +102,28 @@
 <p>あとは試しにコンパイルして確かめてみましょう。
 例えば下記のborder-radiusの指定。</p>
 
-<p><code>div{
+<pre><code>div{  
   @include border-radius(8px);
-}</code></p>
+}
+</code></pre>
 
 <p>Autoprefixer無しだと付与してしまったベンダープレフィックスがすっきりなくなったことが確認できる。</p>
 
-<p><strong>Before</strong>
-<code>div{
+<p><strong>Before</strong></p>
+
+<pre><code>div{  
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-}</code></p>
+}
+</code></pre>
 
-<p><strong>After</strong>
-<code>div{
+<p><strong>After</strong></p>
+
+<pre><code>div{  
   border-radius: 8px;
-}</code></p>
+}
+</code></pre>
 
 <p>以上、業務連絡でした。</p>
         </section>
