@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>pip - PLANPOT DESIGN WORKS OFFICIAL BLOG</title><description>見えないものと闘う</description><link>http://localhost:2368/</link><generator>Ghost 0.5</generator><lastBuildDate>Mon, 08 Dec 2014 03:42:46 GMT</lastBuildDate><atom:link href="http://localhost:2368/tag/pip/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Ghost busted.</title><description>&lt;p&gt;やっとGhost×busterでブログ環境が構築できた。ハロウィンくらいにできたらキャッチーだったのに。お化け屋敷に挑む臆病なルイージに負けてられるかと果敢に挑戦した時間を忘れないよう、この記事に書き残す。あとで詳しく書きたい。&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>pip - PLANPOT DESIGN WORKS OFFICIAL BLOG</title><description>見えないものと闘う</description><link>http://localhost:2368/</link><generator>Ghost 0.5</generator><lastBuildDate>Mon, 22 Dec 2014 08:42:32 GMT</lastBuildDate><atom:link href="http://localhost:2368/tag/pip/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Ghost busted.</title><description>&lt;p&gt;やっとGhost×busterでブログ環境が構築できた。ハロウィンくらいにできたらキャッチーだったのに。お化け屋敷に挑む臆病なルイージに負けてられるかと果敢に挑戦した時間を忘れないよう、この記事に書き残す。あとで詳しく書きたい。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;OSXそのものの問題：xcode-select&lt;/li&gt;
@@ -21,4 +21,28 @@
 &lt;p&gt;Ghostのフォーラムにも作ったのか！すげーな的なことが載ってるのでこちらも &lt;br&gt;
 &lt;a href="https://ghost.org/forum/services/1667-static-site-generator-with-easy-upload-to-github-pages/"&gt;https://ghost.org/forum/services/1667-static-site-generator-with-easy-upload-to-github-pages/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Ghost自体も投稿を重ねてレビューのようなことができたらいいなあ。とりあえずエディタの日本語入力がもたつく感じ。なんだろな。&lt;/p&gt;</description><link>http://localhost:2368/ghost-buster/</link><guid isPermaLink="false">220da9ee-9d22-4186-9b76-67b4e2ee46c1</guid><category>ghost</category><category>buster</category><category>blog</category><category>osx</category><category>python</category><category>node</category><category>github</category><category>brew</category><category>pip</category><dc:creator>Rikiya Suzuki</dc:creator><pubDate>Fri, 21 Nov 2014 01:32:56 GMT</pubDate></item></channel></rss>
+&lt;p&gt;Ghost自体も投稿を重ねてレビューのようなことができたらいいなあ。とりあえずエディタの日本語入力がもたつく感じ。なんだろな。（執筆時v5.5）&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;ここから追記。メモ。&lt;/p&gt;
+
+&lt;h2 id="github"&gt;Githubにリポジトリ作成&lt;/h2&gt;
+
+&lt;p&gt;Github Pageにするために新しくリポジトリを作成しておく。&lt;/p&gt;
+
+&lt;h2 id="ghost"&gt;ghostをローカル用に配置・インストール&lt;/h2&gt;
+
+&lt;p&gt;ghostをインストール。&lt;a href="https://ghost.org/download/"&gt;https://ghost.org/download/&lt;/a&gt; &lt;br&gt;
+解凍ファイルを任意の場所に移動。例. /Users/planpot/Sites/ghost/&lt;/p&gt;
+
+&lt;p&gt;ここからターミナル。cdで上記の場所に移動したあとで、&lt;code&gt;npm install --production&lt;/code&gt; でインストール。&lt;code&gt;npm start&lt;/code&gt;でghost自体を起動できます。管理画面のURLは、&lt;a href="http://localhost:2368/ghost/"&gt;http://localhost:2368/ghost/&lt;/a&gt; 。ユーザー作成や記事の作成はbuster設定してからでも問題ない。&lt;/p&gt;
+
+&lt;h2 id="buster"&gt;busterを設定する&lt;/h2&gt;
+
+&lt;p&gt;ローカルのghostを置いたフォルダにいる状態でbuster setup。
+staticという名前のフォルダが出来上がる。 &lt;br&gt;
+続けてリポジトリのURLが聞かれるので先に作っておいたリポジトリのURLをコピペ。&lt;/p&gt;
+
+&lt;p&gt;これで設定は以上。
+あとはbusterを使って静的書き出しするステップ。これはまた次回。&lt;/p&gt;</description><link>http://localhost:2368/ghost-buster/</link><guid isPermaLink="false">220da9ee-9d22-4186-9b76-67b4e2ee46c1</guid><category>ghost</category><category>buster</category><category>blog</category><category>osx</category><category>python</category><category>node</category><category>github</category><category>brew</category><category>pip</category><dc:creator>Rikiya Suzuki</dc:creator><pubDate>Fri, 21 Nov 2014 01:32:56 GMT</pubDate></item></channel></rss>
